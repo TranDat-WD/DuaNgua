@@ -288,7 +288,7 @@ window.addEventListener("resize", () => {
 let goal = 0;
 let dx = goal - rider1.x;
 let score = 0;
-let win = false;
+let step = 5;
 
 let numAns = 10 + Math.floor(Math.random() * 14) * 2;
 
@@ -296,34 +296,38 @@ question.textContent =
   "Tam giác vuông có trung tuyến AM = " + numAns / 2 + "cm. Cạnh huyền BC = ?";
 
 confirmBtn.addEventListener("click", () => {
-  if (win == false) {
+  if (step > 0) {
     if (ansInp.value == numAns) {
       ansInp.value = null;
       numAns = 10 + Math.floor(Math.random() * 14) * 2;
-      goal += 150;
-      if (goal < 1200) {
+      goal += 240;
+      if (step - 1 > 0) {
         question.textContent =
           "Tam giác vuông có trung tuyến AM = " +
           numAns / 2 +
           "cm. Cạnh huyền BC = ?";
       } else {
-        question.textContent = "Chúc mừng bạn đã chiến thắng";
+        question.textContent = "Trò chơi kết thúc!!!";
       }
       score += 10;
     } else {
       ansInp.value = null;
       numAns = 10 + Math.floor(Math.random() * 14) * 2;
-      question.textContent =
-        "Tam giác vuông có trung tuyến AM = " +
-        numAns / 2 +
-        "cm. Cạnh huyền BC = ?";
-      goal -= 75;
+      if (step - 1 > 0) {
+        question.textContent =
+          "Tam giác vuông có trung tuyến AM = " +
+          numAns / 2 +
+          "cm. Cạnh huyền BC = ?";
+      } else {
+        question.textContent = "Trò chơi kết thúc!!!";
+      }
+      if (goal - 120 > 0) {
+        goal -= 120;
+      }
       score -= 5;
     }
+    step -= 1;
     pScore.textContent = "Điểm: " + score;
-    if (goal >= 1200) {
-      win = true;
-    }
   }
 });
 
