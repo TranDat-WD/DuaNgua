@@ -31,7 +31,7 @@ class road {
     this.x = x;
     this.spd = 0.15 * 3;
     this.img = new Image();
-    this.img.src = "../src/img/round4/Dirt road.png";
+    this.img.src = "src/img/round4/Dirt road.png";
     this.loaded = false;
 
     this.img.onload = () => {
@@ -58,7 +58,7 @@ class bg1 {
     this.x = x;
     this.spd = 0.15 * 4;
     this.img = new Image();
-    this.img.src = "../src/img/round4/Background 1.png";
+    this.img.src = "src/img/round4/Background 1.png";
     this.loaded = false;
 
     this.img.onload = () => {
@@ -85,7 +85,7 @@ class bg2 {
     this.x = x;
     this.spd = 0.15 * 2;
     this.img = new Image();
-    this.img.src = "../src/img/round4/Background 2.png";
+    this.img.src = "src/img/round4/Background 2.png";
     this.loaded = false;
 
     this.img.onload = () => {
@@ -112,7 +112,7 @@ class bg2bn {
     this.x = x;
     this.spd = 0.15 * 2;
     this.img = new Image();
-    this.img.src = "../src/img/round4/Background 2 bonus.png";
+    this.img.src = "src/img/round4/Background 2 bonus.png";
     this.loaded = false;
 
     this.img.onload = () => {
@@ -139,7 +139,7 @@ class bg3 {
     this.x = x;
     this.spd = 0.15;
     this.img = new Image();
-    this.img.src = "../src/img/round4/Background 3.png";
+    this.img.src = "src/img/round4/Background 3.png";
     this.loaded = false;
 
     this.img.onload = () => {
@@ -167,7 +167,7 @@ class rider {
     this.size = 150;
     this.spd = 0;
     this.img = new Image();
-    this.img.src = "../src/img/round4/rider.png";
+    this.img.src = "src/img/round4/rider.png";
     this.loaded = false;
 
     this.img.onload = () => {
