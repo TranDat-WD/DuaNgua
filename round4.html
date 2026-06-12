@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vòng 4: Đua ngựa</title>
+    <link rel="stylesheet" href="round4.css" />
+  </head>
+  <body>
+    <canvas class="bg2" id="bg2"></canvas>
+    <canvas class="bg1" id="bg1"></canvas>
+    <canvas class="road" id="road"></canvas>
+    <canvas class="rider" id="rider"></canvas>
+    <div class="container">
+      <div class="questionContainer">
+        <div class="questionBox">
+          <p class="question" id="question">
+            Tam giác vuông có trung tuyến AM = 14cm. Cạnh huyền BC = ?
+          </p>
+        </div>
+      </div>
+      <div class="inputContainer">
+        <div class="inputBox">
+          <input
+            type="number"
+            id="ansInp"
+            class="ansInp"
+            placeholder="Điền đáp số đúng..."
+          />
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <div class="buttonBox">
+          <button class="confirmBtn" id="confirmBtn">Xác nhận!</button>
+        </div>
+      </div>
+    </div>
+    <div class="scoreCount">
+      <p id="pScore" class="pScore">Điểm: 0</p>
+    </div>
+    <script src="road.js"></script>
+  </body>
+</html>
