@@ -293,7 +293,7 @@ let step = 5;
 let numAns = 10 + Math.floor(Math.random() * 14) * 2;
 
 question.textContent =
-  "Tam giác vuông có trung tuyến AM = " + numAns / 2 + "cm. Cạnh huyền BC = ?";
+  "Tam giác ABC vuông tại A có trung tuyến AM = " + numAns / 2 + "cm. Cạnh huyền BC = ?";
 
 confirmBtn.addEventListener("click", () => {
   if (step > 0) {
@@ -303,7 +303,7 @@ confirmBtn.addEventListener("click", () => {
       goal += 240;
       if (step - 1 > 0) {
         question.textContent =
-          "Tam giác vuông có trung tuyến AM = " +
+          "Tam giác ABC vuông tại A có trung tuyến AM = " +
           numAns / 2 +
           "cm. Cạnh huyền BC = ?";
       } else {
@@ -315,7 +315,7 @@ confirmBtn.addEventListener("click", () => {
       numAns = 10 + Math.floor(Math.random() * 14) * 2;
       if (step - 1 > 0) {
         question.textContent =
-          "Tam giác vuông có trung tuyến AM = " +
+          "Tam giác ABC vuông tại A có trung tuyến AM = " +
           numAns / 2 +
           "cm. Cạnh huyền BC = ?";
       } else {
