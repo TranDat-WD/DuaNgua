@@ -58,9 +58,9 @@ body {
   margin: 10px;
   border-style: solid;
   border-radius: 30px;
-  border-width: 15px;
-  border-color: rgb(159, 255, 159);
-  background-color: rgb(40, 165, 40);
+  border-width: 10px;
+  border-color: rgb(0, 116, 0);
+  background-color: rgb(170, 255, 170);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
 
 .question {
   font-size: 3rem;
-  color: #ff4df3;
+  color: #000000;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   text-align: center;
@@ -84,8 +84,8 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   text-align: center;
-  font-size: 28px;
-  color: #ff4df3;
+  font-size: 32px;
+  color: #000000;
 }
 
 .ansInp:focus {
@@ -94,8 +94,7 @@ body {
 
 input::placeholder {
   text-align: center;
-  font-size: 28px;
-  color: #ff4df3;
+  color: #0000007d;
 }
 
 .confirmBtn {
@@ -103,8 +102,8 @@ input::placeholder {
   height: calc(100% - 10px);
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  font-size: 28px;
-  color: #ff4df3;
+  font-size: 40px;
+  color: #000000;
 }
 
 .scoreCount {
